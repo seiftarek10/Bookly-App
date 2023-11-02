@@ -16,7 +16,7 @@ class _SplachViewState extends State<SplachView> {
     super.initState();
 
     Future.delayed(const Duration(seconds: 2), () {
-      GoRouter.of(context).push(AppRoutes.kHomeRoute);
+      GoRouter.of(context).pushReplacement(AppRoutes.kHomeRoute);
     });
   }
 

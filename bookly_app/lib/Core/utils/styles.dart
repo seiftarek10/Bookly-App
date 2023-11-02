@@ -10,7 +10,7 @@ class Stayles {
     static const textstyle20 =
      TextStyle(fontSize: 20, fontWeight: FontWeight.w500);
     static const textstyle14 =
-     TextStyle(fontSize: 14, fontWeight: FontWeight.normal);
+     TextStyle(fontSize: 14, fontWeight: FontWeight.w300);
     static const textstyle22 =
      TextStyle(fontSize: 22, fontWeight: FontWeight.w500);
 }
