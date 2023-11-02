@@ -6,14 +6,13 @@ class NewBooksListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: ListView.builder(
+    return  ListView.builder(
+          physics:const NeverScrollableScrollPhysics(),
           itemCount: 10,
           itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.only(bottom: 20),
               child:  NewBookItem());
-          }),
-    );
+          });
   }
 }
