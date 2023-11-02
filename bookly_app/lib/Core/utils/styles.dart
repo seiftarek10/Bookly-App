@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Stayles {
   static const textstyle16 =
-      TextStyle(fontSize: 16, fontWeight: FontWeight.w500);
+      TextStyle(fontSize: 16, fontWeight: FontWeight.normal);
    static const textstyle18 =
      TextStyle(fontSize: 18, fontWeight: FontWeight.w500);
     static const textstyle30 =

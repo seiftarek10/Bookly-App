@@ -1,5 +1,7 @@
+import 'package:bookly_app/Core/utils/styles.dart';
 import 'package:bookly_app/Features/Home/Presentation/View/Widgets/books_list_view.dart';
 import 'package:bookly_app/Features/Home/Presentation/View/Widgets/home_view_appBar.dart';
+import 'package:bookly_app/Features/Home/Presentation/View/Widgets/new_book_item.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -7,13 +9,18 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding:  EdgeInsets.all(20),
+    return  Padding(
+      padding:const EdgeInsets.all(20),
       child:  Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-           HomeViewAbbBar(),
-           SizedBox(height: 40),
-           BooksListView()
+          const HomeViewAbbBar(),
+          const SizedBox(height: 40),
+          const BooksListView(),
+          const SizedBox(height: 40),
+          Text('Newset Books',style: Stayles.textstyle18.copyWith(fontWeight:FontWeight.bold),),
+          const SizedBox(height: 20),
+          NewBookItem()
         ],
       ),
     );
