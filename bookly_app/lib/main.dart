@@ -14,7 +14,9 @@ class BooklyApp extends StatelessWidget {
       routerConfig: AppRoutes.router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith( 
-        scaffoldBackgroundColor: const Color(0xff100E23)
-      ));
+        scaffoldBackgroundColor: const Color(0xff100E23),
+      ),
+      
+      );
   }
 }

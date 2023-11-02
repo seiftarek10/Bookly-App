@@ -39,7 +39,7 @@ class BookDetailsSection extends StatelessWidget {
                     topLeft: Radius.circular(10),
                     bottomLeft: Radius.circular(10)),
                 text: r"19.99$",
-                style: Stayles.textstyle20
+                style: Stayles.textstyle22
                     .copyWith(color: Colors.black, fontWeight: FontWeight.bold),
               ),
               const CustomButton(
@@ -48,7 +48,7 @@ class BookDetailsSection extends StatelessWidget {
                     topRight: Radius.circular(10),
                     bottomRight: Radius.circular(10)),
                 text: "Free Preview",
-                style: Stayles.textstyle20,
+                style: Stayles.textstyle22,
               ),
             ],
           ),

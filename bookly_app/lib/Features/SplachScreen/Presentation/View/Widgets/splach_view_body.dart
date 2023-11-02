@@ -7,15 +7,15 @@ class SplachViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Logo(height: 60),
-          SizedBox(height: 14),
+         const Logo(height: 60),
+         const SizedBox(height: 14),
           Text(
             "Free Books",
-            style: Stayles.textstyle16,
+            style: Stayles.textstyle16.copyWith(fontWeight: FontWeight.w600),
           )
         ],
       ),
