@@ -4,14 +4,14 @@ class BookModel {
   String? author;
   num? rating;
   int? ratingCount;
-  num? price;
+  // num? price;
   String? bookLink;
 
   BookModel(
       {required this.author,
       required this.bookImage,
       required this.bookLink,
-      required this.price,
+      // required this.price,
       required this.rating,
       required this.ratingCount,
       required this.title});
@@ -21,7 +21,7 @@ class BookModel {
         author: json['items'][index]['volumeInfo']['authors'][0],
         bookImage: json['items'][index]['volumeInfo']['imageLinks']['thumbnail'],
         bookLink: json['items'][index]['volumeInfo']['previewLink'],
-        price: json['items'][index]["saleInfo"]['listPrice']['amount'],
+        // price: json['items'][index]["saleInfo"]['listPrice']['amount'] ?? 0,
         rating: json['items'][index]['volumeInfo']['averageRating'],
         ratingCount: json['items'][index]['volumeInfo']['ratingsCount'],
         title: json['items'][index]['volumeInfo']['title']);
