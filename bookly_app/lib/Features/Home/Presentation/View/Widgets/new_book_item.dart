@@ -10,7 +10,7 @@ class NewBookItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        BookImage(height: 100),
+        BookImage(height: 110),
         // SizedBox(width: 25),
         Expanded(
           child: Padding(
