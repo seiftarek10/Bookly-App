@@ -1,3 +1,4 @@
+import 'package:bookly_app/Features/SplachScreen/Presentation/View/splach_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,13 @@ class BooklyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Scaffold());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark().copyWith( 
+        scaffoldBackgroundColor: const Color(0xff100E23)
+      ),
+      home: const Scaffold(
+        body: SplachView(),
+      ));
   }
 }
