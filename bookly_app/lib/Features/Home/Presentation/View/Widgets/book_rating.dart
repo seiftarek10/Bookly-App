@@ -2,19 +2,21 @@ import 'package:bookly_app/Core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class BookRating extends StatelessWidget {
-  const BookRating({super.key});
+  const BookRating({super.key, required this.rating, required this.ratingCount});
+
+  final String rating, ratingCount;
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Icon(Icons.star_rounded, color: Colors.yellow, size: 20),
+        const Icon(Icons.star_rounded, color: Colors.yellow, size: 20),
         Text(
-          " 4.8",
+          rating,
           style: Stayles.textstyle18,
         ),
         Text(
-          " (245)",
+           " ($ratingCount)",
           style: Stayles.textstyle14,
         )
       ],
