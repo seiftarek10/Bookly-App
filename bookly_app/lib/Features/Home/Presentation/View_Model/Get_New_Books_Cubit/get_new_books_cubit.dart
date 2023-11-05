@@ -6,6 +6,7 @@ class NewBooksCubit extends Cubit<NewBooksStates> {
   NewBooksCubit(this.homeRepo) : super(InitialState());
   HomeRepo homeRepo;
   Future<void> getNewBooks() async {
+    emit(LoadingState());
     var result = await homeRepo.getNewstBooks();
     result.fold(
         (failuar) => {emit(FailuarGetNewBooks(errMessage: failuar.errMasages))},

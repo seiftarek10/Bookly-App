@@ -34,10 +34,8 @@ class NewBooksListView extends StatelessWidget {
               itemBuilder: (context, index) {
                 return GestureDetector(
                   onTap: () {
-                    GoRouter.of(context).push(
-                      AppRoutes.kBoodDetailsRoute,
-                      extra: state.newBooks[index]
-                      );
+                    GoRouter.of(context).push(AppRoutes.kBoodDetailsRoute,
+                        extra: state.newBooks[index]);
                   },
                   child: Padding(
                       padding: const EdgeInsets.only(bottom: 20),
