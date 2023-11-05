@@ -13,12 +13,11 @@ class HomeRepoImpl implements HomeRepo {
   Future<Either<Failuar, List<BookModel>>> getAllBooks() async {
     try {
       Map<String, dynamic> data =
-          await apiService.get(uri: "volumes?q=programming");
+          await apiService.get(uri: "volumes?Filtering=free-ebooks&q=programming");
       List<BookModel> books = [];
       for (int i = 0; i < data['items'].length; i++) {
         books.add(BookModel.fromjson(data, i));
       }
-      print(books);
       return right(books);
     } catch (e) {
       if (e is DioException) {

@@ -22,8 +22,8 @@ class BookModel {
         bookImage: json['items'][index]['volumeInfo']['imageLinks']['thumbnail'],
         bookLink: json['items'][index]['volumeInfo']['previewLink'],
         // price: json['items'][index]["saleInfo"]['listPrice']['amount'] ?? 0,
-        rating: json['items'][index]['volumeInfo']['averageRating'],
-        ratingCount: json['items'][index]['volumeInfo']['ratingsCount'],
+        rating: json['items'][index]['volumeInfo']['averageRating']??0,
+        ratingCount: json['items'][index]['volumeInfo']['ratingsCount']??0,
         title: json['items'][index]['volumeInfo']['title']);
   }
 }
